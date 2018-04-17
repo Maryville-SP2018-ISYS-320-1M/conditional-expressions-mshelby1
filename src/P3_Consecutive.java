@@ -1,7 +1,7 @@
 /*
 	ISYS 320
-	Name(s):
-	Date: 
+	Name(s): Matthew Shelby
+	Date: 4/22/2018
 */
 
 import java.util.Scanner;
@@ -23,7 +23,11 @@ public class P3_Consecutive {
 			int num3 = console.nextInt();
 		
 			System.out.printf( "a: %d, b: %d, c: %d -> ", num1, num2, num3);
-			
+			if ((Math.abs(num1 - num2) == 1) || (Math.abs(num2 - num3) == 1) || (Math.abs(num1 - num3) == 1)) {
+				System.out.println("They are consecutive.");
+			} else {
+				System.out.println("They are not consecutive.");
+			}
 
 			
 			System.out.print("Would you like to do it again (enter 'n' to quit)? ");
